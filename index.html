@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-5">All Aboard!</h1>
+                <p class="lead">Always on Time, sometimes.</p>
+            </div>
+        </div>
+        <caption>Current Train Schedule</caption>
+        <table class="table">
+            <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Fregquency(min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </table>
+        <form>
+            <div class="form-group">
+                <label class="form-control-label" for="trainNameInput">Train Name</label>
+                <input type="text" class="form-control" id="trainNameInput">
+            </div>
+            <div class="form-group">
+                <label class="form-control-label" for="destinationInput">Destination</label>
+                <input type="text" class="form-control" id="destinationInput" placeholder="City Name">
+            </div>
+            <div class="form-group">
+                <label class="form-control-label" for="frsttrainInput">First Train Time(HH:mm - military time)</label>
+                <input type="text" class="form-control" id="frsttrainInput" placeholder="HH:mm">
+            </div>
+            <div class="form-group">
+                <label class="form-control-label" for="frequencyInput">Frequency(min)</label>
+                <input type="text" class="form-control" id="frequencyInput">
+            </div>
+            <button id="add-train-btn" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> 
+     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script> 
+    <script src="assets/javascript/app.js">
+    
+
+
+    </script>
+</body>
+
+</html>
